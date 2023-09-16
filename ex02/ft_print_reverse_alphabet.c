@@ -6,7 +6,7 @@
 /*   By: mooujaa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:56:29 by mooujaa           #+#    #+#             */
-/*   Updated: 2023/09/13 16:13:35 by mooujaa          ###   ########.fr       */
+/*   Updated: 2023/09/16 17:15:21 by mooujaa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,4 @@ void	ft_print_reverse_alphabet(void)
 		write(1, &c, 1);
 		c--;
 	}
-}
-
-int	main(void)
-{
-	ft_print_reverse_alphabet ();
-	return (0);
 }

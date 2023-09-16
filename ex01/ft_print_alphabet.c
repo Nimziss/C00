@@ -6,7 +6,7 @@
 /*   By: mooujaa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:31:00 by mooujaa           #+#    #+#             */
-/*   Updated: 2023/09/13 15:43:15 by mooujaa          ###   ########.fr       */
+/*   Updated: 2023/09/16 17:14:48 by mooujaa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,4 @@ void	ft_print_alphabet(void)
 		write (1, &c, 1);
 		c++;
 	}
-}
-
-int	main(void)
-{
-	ft_print_alphabet ();
-	return (0);
 }

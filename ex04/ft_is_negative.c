@@ -6,7 +6,7 @@
 /*   By: mooujaa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 16:57:41 by mooujaa           #+#    #+#             */
-/*   Updated: 2023/09/13 17:11:21 by mooujaa          ###   ########.fr       */
+/*   Updated: 2023/09/16 17:16:35 by mooujaa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,4 @@ void	ft_is_negative(int n)
 		write (1, &"P", 1);
 	else
 		write (1, &"N", 1);
-}
-
-int	main(void)
-{
-	ft_is_negative (1);
 }
