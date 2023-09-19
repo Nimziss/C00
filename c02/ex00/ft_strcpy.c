@@ -1,25 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_numbers.c                                 :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mooujaa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 16:15:48 by mooujaa           #+#    #+#             */
-/*   Updated: 2023/09/16 17:16:00 by mooujaa          ###   ########.fr       */
+/*   Created: 2023/09/19 04:29:42 by mooujaa           #+#    #+#             */
+/*   Updated: 2023/09/19 09:21:53 by mooujaa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+/*#include <stdio.h>
+#include <string.h>*/
 
-void	ft_print_numbers(void)
+char	*ft_strcpy(char *dest, char *src)
 {
-	char	c;
+	int	i;
 
-	c = '0';
-	while (c <= '9')
+	i = 0;
+	while (src[i] != '\0')
 	{
-		write(1, &c, 1);
-		c++;
+		dest[i] = src[i];
+		i++;
 	}
+	dest[i] = '\0';
+	return (dest);
 }
+/*int main()
+{
+	char src[] = "Mouaad";
+	char dest[] = "hello";
+
+	ft_strcpy(dest, src);
+	printf("%s ", dest);
+}*/

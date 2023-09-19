@@ -1,0 +1,3 @@
+[submodule "C00"]
+	path = C00
+	url = https://github.com/Nimziss/C00.git

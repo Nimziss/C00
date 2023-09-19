@@ -1,25 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_reverse_alphabet.c                        :+:      :+:    :+:   */
+/*   ft_strncpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mooujaa <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/09/13 15:56:29 by mooujaa           #+#    #+#             */
-/*   Updated: 2023/09/16 17:15:21 by mooujaa          ###   ########.fr       */
+/*   Created: 2023/09/19 08:48:11 by mooujaa           #+#    #+#             */
+/*   Updated: 2023/09/19 09:34:05 by mooujaa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-void	ft_print_reverse_alphabet(void)
+/*#include <stdio.h>
+#include <string.h>*/
+char	*ft_strncpy(char *dest, char *src, unsigned int n)
 {
-	char	c;
+	unsigned int	i;
 
-	c = 'z';
-	while (c >= 'a')
+	i = 0;
+	while (src[i] != '\0' && i < n)
 	{
-		write(1, &c, 1);
-		c--;
+		dest[i] = src[i];
+		i++;
 	}
+	while (i < n)
+	{
+		dest[i] = '\0';
+		i++;
+	}
+	return (dest);
 }
+/*int main()
+{
+	char src[] = "mouaad";
+	char dest[] = "helloo";
+
+	ft_strncpy(dest, src, 6);
+	printf("%s ", dest);
+}*/
